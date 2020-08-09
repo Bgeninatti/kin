@@ -28,7 +28,7 @@ def test_dcm_conversion(vector, angle):
     Test the conversion from principal rotation to DCM and vice-versa.
     The conversion is tested for non-singular cases.
     Thus this test case alwsays test for `angle % np.pi` is different than zero
-    """?!?jedi=0, ?!?                   (*_*e*_*, angle) ?!?jedi?!?
+    """
     r1 = PrincipalRotation(np.array(vector), angle)
     r2 = PrincipalRotation.from_dcm(r1.dcm)
 
